@@ -19,7 +19,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 def login_sap():
-    url = "https://177.85.33.53:50695/b1s/v1/Login"
+    url = "https://XXXXXXXXXXXXXX/b1s/v1/Login"
     headers = {'Content-Type': 'application/json'}
     company = company_combobox.get()
     username = username_entry.get()
