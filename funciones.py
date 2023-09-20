@@ -78,7 +78,7 @@ def procesar_archivo_excel():
     return df
 
 def buscar_duplicados(df):
-    barcodes_url = "https://177.85.33.53:50695/b1s/v1/BarCodes"
+    barcodes_url = "https://xxx.xx.xx.xx:xxxxx/b1s/v1/BarCodes"
     duplicados = pd.DataFrame(columns=df.columns)
     no_encontrados = []
     for index, row in df.iterrows():
@@ -110,7 +110,7 @@ def crear_articulos(df):
     CodigoNCM['GroupCode'] = 'C'
     CodigoNCM['AbsEntry'] = ''
     CodigoNCM.rename(columns={'BarCode': 'NCMCode', 'ItemName': 'Description'}, inplace=True)
-    codigo_ncm_url = "https://177.85.33.53:50695/b1s/v1/NCMCodesSetup"
+    codigo_ncm_url = "https://xxx.xx.xx.xx:xxxxx/b1s/v1/NCMCodesSetup"
     for index, row in CodigoNCM.iterrows():
         ncm_code = row['NCMCode']
         query = "?$filter=NCMCode eq '{}'".format(ncm_code)
@@ -148,7 +148,7 @@ def crear_articulos(df):
     json_records = df.to_json(orient='records')
     dict_data = json.loads(json_records)
     # Crear artículos nuevos con el objeto Items
-    items_url = "https://177.85.33.53:50695/b1s/v1/Items"
+    items_url = "https://xxx.xx.xx.xx:xxxxx/b1s/v1/Items"
     articulos_creados_data = []
     for item in dict_data:
         items_response = requests.post(items_url, headers=headers, data=json.dumps(item), cookies=cookies, verify=False)
@@ -172,11 +172,11 @@ def crear_articulos(df):
 def informar():
     global ArticulosCreados
     # Configuración del correo
-    smtp_server = 'smtp.super-clin.com.ar'  
+    smtp_server = 'smtp.xxxxxxxx.com.ar'  
     smtp_port = 587  
-    sender_email = 'braian.alonso@super-clin.com.ar'  # Remitente
-    sender_password = 'alon3786'  
-    receiver_emails = ['compras@super-clin.com.ar','braian.alonso@super-clin.com.ar', 'roberto.carballo@superclin.com' , 'administracion@super-clin.com.ar', 'compras2@super-clin.com.ar', 'ignacio.galindez@super-clin.com.ar']  # Lista de destinatarios
+    sender_email = 'xxxxx@xxxxxx.com'  # Remitente
+    sender_password = 'xxxxx'  
+    receiver_emails = ['xxxxx@xxxxxx.com','xxxxx@xxxxxx.com', 'xxxxx@xxxxxx.com' , 'xxxxx@xxxxxx.com', 'xxxxx@xxxxxx.com', 'xxxxx@xxxxxx.com']  # Lista de destinatarios
     # Crear el mensaje
     subject = 'Nuevos artículos creados'
     body = """
