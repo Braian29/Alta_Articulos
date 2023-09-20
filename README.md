@@ -7,8 +7,10 @@ Creación Masiva de Artículos en SAP Business One
 
 2do Paso : Leer Datos , Cargar Artículos e Informar.
 
-![image](https://github.com/Braian29/Alta_Articulos/assets/103294297/2d0da534-641a-4ca5-b7a7-9729d76f618d)
+
+![1](https://github.com/Braian29/Alta_Articulos/assets/103294297/458ba52e-2319-4db5-a8a8-58a236958959)
+
 
 Fin de Proceso : Mail recibido con información.
 
-![Captura de pantalla 2023-09-18 101949](https://github.com/Braian29/Alta_Articulos/assets/103294297/0e07612f-21d2-4b39-aa68-7d89c11b9504)
+![2](https://github.com/Braian29/Alta_Articulos/assets/103294297/274a9015-4cac-4857-a40f-73ccb4b07d96)
