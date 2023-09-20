@@ -3,7 +3,7 @@ Creación Masiva de Artículos en SAP Business One
 
 1er paso : Loguearse en SAP.
 
-![image](https://github.com/Braian29/Alta_Articulos/assets/103294297/7fcc5e8c-8009-4f61-ada6-ea3d825d23a0)
+![Captura de pantalla 2023-09-20 133411](https://github.com/Braian29/Alta_Articulos/assets/103294297/4ed0ac34-f9d8-462a-8958-7c9295e6e6f5)
 
 2do Paso : Leer Datos , Cargar Artículos e Informar.
 
