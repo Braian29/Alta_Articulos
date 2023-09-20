@@ -78,7 +78,7 @@ frame.pack(pady=10)
 
 # Etiquetas y campos de entrada
 ctk.CTkLabel(frame, text="Compañía:").pack(pady=5)
-company_combobox = ttk.Combobox(frame, values=['SUPERCLIN', 'SUPERCLIN_MRP'])
+company_combobox = ttk.Combobox(frame, values=['Base1', 'Base2'])
 company_combobox.pack(pady=2)
 company_combobox.set('SUPERCLIN')  # Valor predeterminado
 
