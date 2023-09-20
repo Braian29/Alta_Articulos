@@ -80,7 +80,7 @@ frame.pack(pady=10)
 ctk.CTkLabel(frame, text="Compañía:").pack(pady=5)
 company_combobox = ttk.Combobox(frame, values=['Base1', 'Base2'])
 company_combobox.pack(pady=2)
-company_combobox.set('SUPERCLIN')  # Valor predeterminado
+company_combobox.set('base1')  # Valor predeterminado
 
 ctk.CTkLabel(frame, text="Usuario:").pack(pady=5)
 username_entry = ctk.CTkEntry(frame)
